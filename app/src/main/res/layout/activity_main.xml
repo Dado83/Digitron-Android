@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="es.hol.fairplay.digitron.MainActivity"
+    android:background="@color/greenLight">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:textColor="@color/green"
+        android:id="@+id/past"
+        android:layout_centerHorizontal="true"
+        android:gravity="start"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/display"
+        android:textSize="50sp"
+        android:textColor="@color/black"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/calc"
+        android:gravity="end"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:tag="d"/>
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:addStatesFromChildren="false"
+        android:rowCount="4"
+        android:columnCount="5"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/calc">
+
+        <Button
+            android:text="@string/b7"
+            android:id="@+id/b7"
+            android:tag="7"
+            style="@style/num"/>
+
+        <Button
+            android:id="@+id/b8"
+            android:tag="8"
+            android:text="@string/b8"
+            style="@style/num"
+            />
+        <Button
+            android:text="@string/b9"
+            android:id="@+id/b9"
+            android:tag="9"
+            style="@style/num"/>
+
+        <Button
+            android:id="@+id/C"
+            android:text="@string/c"
+            android:tag="c"
+            style="@style/operand"/>
+
+        <Button
+            android:id="@+id/root"
+            android:text="@string/root"
+            android:tag="root"
+            style="@style/operand"/>
+
+        <Button
+            android:text="@string/b4"
+            android:id="@+id/b4"
+            android:tag="4"
+            style="@style/num"/>
+
+        <Button
+            android:text="@string/b5"
+            android:id="@+id/b5"
+            android:tag="5"
+            style="@style/num"/>
+
+        <Button
+            android:text="@string/b6"
+            android:id="@+id/b6"
+            android:tag="6"
+            style="@style/num"/>
+
+        <Button
+            android:text="@string/multi"
+            android:id="@+id/multi"
+            android:tag="x"
+            style="@style/operand" />
+
+        <Button
+            android:text="@string/div"
+            android:id="@+id/div"
+            android:tag="/"
+            style="@style/operand" />
+
+        <Button
+            android:text="@string/b1"
+            android:id="@+id/b1"
+            android:tag="1"
+            style="@style/num"/>
+
+        <Button
+            android:text="@string/b2"
+            android:id="@+id/b2"
+            android:tag="2"
+            style="@style/num"/>
+
+        <Button
+            android:text="@string/b3"
+            android:id="@+id/b3"
+            android:tag="3"
+            style="@style/num"/>
+
+        <Button
+            android:text="@string/plus"
+            android:id="@+id/plus"
+            android:tag="+"
+            style="@style/operand"/>
+
+        <Button
+            android:text="@string/minus"
+            android:id="@+id/min"
+            android:tag="-"
+            style="@style/operand"/>
+
+        <Button
+            android:text="@string/dot"
+            android:id="@+id/dot"
+            android:tag="."
+            style="@style/operand"/>
+
+        <Button
+            android:text="@string/b0"
+            android:id="@+id/b0"
+            android:tag="0"
+            style="@style/num"/>
+
+        <Button
+            android:id="@+id/neg"
+            android:text="@string/neg"
+            android:tag="neg"
+            style="@style/operand"/>
+
+        <Button
+            android:text="@string/equals"
+            android:id="@+id/eq"
+            android:tag="="
+            style="@style/operand"
+            android:textStyle="bold"
+            android:textColor="@color/green"/>
+
+        <Button
+            android:text="@string/ac"
+            android:id="@+id/AC"
+            android:tag="ac"
+            style="@style/operand"/>
+
+    </GridLayout>
+
+
+
+</RelativeLayout>
